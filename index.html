@@ -5,9 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="header__logo">CV #3</a>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-link"><a href="#contacts">Contacts</a></li>
+                        <li class="header__menu-link"><a href="#about">About</a></li>
+                        <li class="header__menu-link"><a href="#skills">Skills</a></li>
+                        <li class="header__menu-link"><a href="#code">Code</a></li>
+                        <li class="header__menu-link"><a href="#experience">Experience</a></li>
+                        <li class="header__menu-link"><a href="#education">Education</a></li>
+                        <li class="header__menu-link"><a href="#english">English</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="lead">
+                <div class="lead__inner">
+                    <div class="lead__image">
+                        <img src="https://i.postimg.cc/mkxRSMsN/photo-2024-06-28-08-21-03.jpg"
+                            alt="The photo will be for another time, but here's a cat for you :) ">
+                    </div>
+                    <h1 class="lead__title">Javokhir Abdurakhimov</h1>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <h2 class="section__title">Contacts:</h2>
+                <ul class="contacts__list">
+                    <li><span class="contacts__type">Telegram:</span><a href="https://t.me/snowy_coded"
+                            class="contacts__link">@snowy_coded</a>
+                    </li>
+                    <li><span class="contacts__type">Email:</span><a href="mailto:snowycoded@gmail.com"
+                            class="contacts__link">snowycoded@gmail.com</a></li>
+                </ul>
+            </section>
+            <section class="about" id="about">
+                <h2 class="section__title">About me:</h2>
+                <p class="about__text">I am 24 years old. I worked as a junior Front-end developer for 2 years. After
+                    that I tried my hand
+                    in other fields like web design, video editing etc. But I’m back here again… </p>
+            </section>
+            <section class="skills" id="skills">
+                <h2 class="section__title">Skills:</h2>
+                <ul class="skills__list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>Gulp</li>
+                    <li>WebStorm</li>
+                    <li>Figma</li>
+                </ul>
+            </section>
+            <section class="code" id="code">
+                <h2 class="section__title">Code example:</h2>
+                <p class="code__desc">Mobile menu toggle</p>
+                <pre><code class="code__showcase">
+export function mobileMenu(){
+    let burger = document.querySelector('.burger');
+    let nav = document.querySelector('.header__nav');
+    let html = document.getElementsByTagName('html')[0];
+    
+    burger.addEventListener('click', function(evt){
+        console.log(evt);
+        burger.classList.toggle('open');
+        nav.classList.toggle('is-open');
+        html.classList.toggle('no-scroll');
+    })
+}
+                </code></pre>
+            </section>
+            <section class="experience" id="experience">
+                <h2 class="section__title">Experience:</h2>
+                <ul class="experience__list">
+                    <li><a href="https://mtakeaway.netlify.app/" target="_blank">Takeaway [ Markup ]</a></li>
+                    <li><a href="https://dtex.netlify.app/" target="_blank">dataTables.js [ Library Showcase ]</a></li>
+                </ul>
+            </section>
+            <section class="education" id="education">
+                <h2 class="section__title">Education:</h2>
+                <ul class="education__list">
+                    <li>Tashkent Professional College of Information Technologies 2015-2018</li>
+                    <li>RSSchool | JS/FE Pre-School - 2024</li>
+                </ul>
+            </section>
+            <section class="english-level" id="english">
+                <h2 class="section__title">English level:</h2>
+                <p class="english-level__text">In fact, I’m currently studying at a learning center. Technically, I’m in
+                    the Elementary level group there. So, my level is somewhere between A2 and B1.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="https://github.com/snowycoded" class="footer__github">Github</a>
+                <span class="footer__copyright">&copy; 2024</span>
+                <div class="footer__rsschool">
+                    <img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/cv/rs-school-logo.svg"
+                        class="footer__rsschool-logo" alt="RSS logo">
+                    <a href="https://rs.school/courses/javascript-ru" class="footer__rsschool-link">JS/FE Pre-School
+                        2024Q2</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
