@@ -1,0 +1,237 @@
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+html {
+    font-family: "Kode Mono", Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    line-height: 1.67;
+    tab-size: 4;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #16161a;
+    color: #fffffe;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: #2cb67d;
+    transition: all 0.4s;
+}
+
+.section__title {
+    position: relative;
+    color: #94a1b2;
+    margin-bottom: 16px;
+}
+
+.section__title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16%;
+    height: 4px;
+    background-color: #7f5af0;
+    bottom: -4px;
+    left: 0;
+    border-radius: 4px;
+}
+
+/* header */
+.header {
+    padding: 20px 0;
+    background-color: #7f5af052;
+    border-bottom: 1px solid #2cb67d;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu-link {
+    margin: 0 16px;
+}
+
+/* lead */
+
+.lead {
+    margin-bottom: 20px;
+    padding-top: 80px;
+}
+
+.lead__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lead__image {
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* contacts */
+.contacts {
+    padding: 20px 0;
+}
+
+/* .contacts__list{
+    list-style: none;
+} */
+
+.contacts__type {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.contacts__link {
+    color: #2cb67d;
+}
+
+.contacts__link:hover {
+    color: #7f5af0;
+}
+
+/* about */
+.about {
+    padding: 20px 0;
+}
+
+.about__text {
+    max-width: 50%;
+    width: 50%;
+}
+
+/* skills */
+.skills {
+    padding: 20px 0;
+}
+
+.skills__list {
+    padding-left: 20px;
+    list-style: "> ";
+}
+
+/* code */
+.code {
+    padding: 20px 0;
+}
+
+.code__desc {
+    margin-bottom: 8px;
+}
+
+.code__showcase {
+    background-color: #242629;
+    display: block;
+    padding: 8px 32px;
+    border-radius: 8px;
+    max-width: 50%;
+    width: 50%;
+    color: #2cb67d;
+}
+
+/* experience */
+.experience {
+    padding: 20px 0;
+}
+
+.experience__list {
+    list-style: "- ";
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* education */
+.education {
+    padding: 20px 0;
+}
+
+/* english levev */
+.english-level {
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.english-level__text {
+    max-width: 50%;
+    width: 50%;
+}
+
+/* footer */
+.footer {
+    padding: 20px 0;
+    background-color: #7f5af052;
+    border-top: 1px solid #2cb67d;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__rsschool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__rsschool-logo {
+    width: 64px;
+    margin-right: 16px;
+}
